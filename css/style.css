@@ -1,0 +1,313 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    body {
+        font-family: 'Open Sans', sans-serif;
+        background-color: #110f0f;
+    }
+    
+    .container {
+        width: 80%;
+        margin: 0 auto;
+    }
+    /* ==========banner part start====================== */
+    
+    #banner {
+        margin-top: 50px;
+    }
+    
+    .banner {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .banner-left {
+        padding: 0 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .banner-left h2 {
+        font-size: 45px;
+        font-weight: 700;
+        color: transparent;
+        position: relative;
+    }
+    
+    .banner-left h2::before {
+        content: "Programming Hero";
+        position: absolute;
+        white-space: nowrap;
+        color: #22bedd;
+        animation: typing 4s linear infinite;
+    }
+    
+    @keyframes typing {
+        0% {
+            content: "P|";
+        }
+        4% {
+            content: "Pr|";
+        }
+        8% {
+            content: "Pro|";
+        }
+        12% {
+            content: "Prog|";
+        }
+        16% {
+            content: "Progr|";
+        }
+        20% {
+            content: "Progra|";
+        }
+        24% {
+            content: "Program|";
+        }
+        28% {
+            content: "Programm|";
+        }
+        32% {
+            content: "Programmi|";
+        }
+        36% {
+            content: "Programmin|";
+        }
+        40% {
+            content: "Programming|";
+        }
+        44% {
+            content: "Programming |";
+        }
+        48% {
+            content: "Programming H|";
+        }
+        52% {
+            content: "Programming He|";
+        }
+        56% {
+            content: "Programming Her|";
+        }
+        60% {
+            content: "Programming Hero|";
+        }
+        64%,
+        84% {
+            content: "Programming Hero|";
+        }
+        85% {
+            content: "Programming Her|";
+        }
+        86% {
+            content: "Programming He|";
+        }
+        87% {
+            content: "Programming H|";
+        }
+        88% {
+            content: "Programming |";
+        }
+        89% {
+            content: "Programming |";
+        }
+        89% {
+            content: "Programming|";
+        }
+        90% {
+            content: "Programmin|";
+        }
+        91% {
+            content: "Programmi|";
+        }
+        92% {
+            content: "Programm|";
+        }
+        93% {
+            content: "Program|";
+        }
+        94% {
+            content: "Progra|";
+        }
+        95% {
+            content: "Progr|";
+        }
+        96% {
+            content: "Prog|";
+        }
+        97% {
+            content: "Pro|";
+        }
+        98% {
+            content: "Pr|";
+        }
+        99% {
+            content: "P|";
+        }
+        100% {
+            content: "|";
+        }
+    }
+    
+    .banner-left p {
+        font-size: 16px;
+        font-weight: 400;
+        padding: 15px 0;
+        color: #fff;
+    }
+    
+    .banner-left a {
+        padding: 10px 20px;
+        border-radius: 3px;
+        border: 3px solid #22bedd;
+        color: #fff;
+        background-color: #22bedd;
+        transition: 0.4s ease-in-out;
+    }
+    
+    .banner-left a:hover {
+        background-color: transparent;
+    }
+    
+    .banner-right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    /* ===========banner part ends============================= */
+    /* ==================gallery part starts====================*/
+    
+    #gallery {
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+    
+    .gallery-title {
+        text-align: center;
+        padding: 30px 0;
+    }
+    
+    .gallery-title h2 {
+        color: #fff;
+        font-size: 36px;
+        line-height: 0.8;
+        border-left: 4px solid #fff;
+        border-right: 4px solid #fff;
+        display: inline-block;
+        padding: 0 10px;
+    }
+    
+    .photo-item {
+        height: 280px;
+        width: 280px;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .photo-item img {
+        height: 100%;
+        width: 100%;
+    }
+    
+    .border {
+        background-color: #fff;
+        transition: 1s ease-out;
+    }
+    
+    .border.left {
+        height: 280px;
+        width: 5px;
+        position: absolute;
+        bottom: -280px;
+    }
+    
+    .border.right {
+        height: 280px;
+        width: 5px;
+        position: absolute;
+        right: 0;
+        top: -280px;
+    }
+    
+    .border.top {
+        height: 5px;
+        width: 280px;
+        position: absolute;
+        left: -280px;
+    }
+    
+    .border.bottom {
+        height: 5px;
+        width: 280px;
+        position: absolute;
+        bottom: 0;
+        right: -280px;
+    }
+    
+    .photo-item:hover .border.top {
+        left: 5px;
+    }
+    
+    .photo-item:hover .border.bottom {
+        right: 5px;
+    }
+    
+    .photo-item:hover .border.left {
+        bottom: 5px;
+    }
+    
+    .photo-item:hover .border.right {
+        top: 5px;
+    }
+    
+    .photo-content {
+        position: absolute;
+        bottom: 30px;
+        left: 50%;
+        transform: translate(-50%, 160%);
+        transition: 1s ease-out;
+    }
+    
+    .photo-content h3 {
+        color: #fff;
+        white-space: nowrap;
+    }
+    
+    .photo-content p {
+        color: #fff;
+        white-space: nowrap;
+    }
+    
+    .photo-item::before {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+        transition: 1s linear;
+    }
+    
+    .photo-item:hover .photo-content {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .photo-item:hover::before {
+        background-color: rgba(0, 0, 0, 0);
+    }
+    
+    .gallery-main {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
